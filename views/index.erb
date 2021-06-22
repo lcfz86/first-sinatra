@@ -1,9 +1,13 @@
-"<div style='border: 5px double blue'>
+<div style='border: 5px double blue'>
   <% if @visitor %>
     Hello, <%= @visitor %>!
-  <% end %>
-  <% if @name %>
-    My name is <%= @name %>
+  <% else %>
+    <form action="/hello">
+      My name is <%= @name %>
+      What's your name?
+      <input type= "text" name="name">
+      <input type="submit" value="Submit">
+    </form>
   <% end %>
   <img src= 'http://placekitten.com/200/300'>
-</div>"
+</div>
