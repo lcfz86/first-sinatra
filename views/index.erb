@@ -1,4 +1,9 @@
 "<div style='border: 5px double blue'>
-  My name is <%= @name %>
+  <% if @visitor %>
+    Hello, <%= @visitor %>!
+  <% end %>
+  <% if @name %>
+    My name is <%= @name %>
+  <% end %>
   <img src= 'http://placekitten.com/200/300'>
 </div>"
