@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 
 get '/' do
-  "<div>
+  "<div style='border: 5px double blue'>
     <img src= 'http://placekitten.com/200/300'>
   </div>"
 end
